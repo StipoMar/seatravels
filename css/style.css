@@ -6580,22 +6580,23 @@ body {
     text-transform: uppercase; }
 
 .about__main-heading {
-  font-size: 40px;
-  color: #188a8d;
-  text-align: center;
-  font-weight: 700; }
+  font-size: 30px;
+  display: inline-block;
+  background-image: linear-gradient(to right, #188a8d, #093536);
+  font-weight: 700;
+  -webkit-background-clip: text;
+  color: transparent;
+  transition: all .2s; }
+  .about__main-heading:hover {
+    transform: skew(2deg, 5deg) scale(1.1);
+    text-shadow: 5px 10px 20px rgba(0, 0, 0, 0.2); }
 
 .about__desc {
   color: #26a69a;
   text-transform: uppercase;
-  font-size: 1.5rem;
-  font-weight: 700; }
-
-.about__text {
-  text-align: justify; }
-
-__main-heading {
-  font-size: 10px; }
+  font-size: 1.3rem;
+  font-weight: 700;
+  text-shadow: 5px 10px 20px rgba(0, 0, 0, 0.2); }
 
 .header-btn:link, .header-btn:visited {
   background-color: #fff;
@@ -6609,6 +6610,46 @@ __main-heading {
   transform: scale(1.1);
   background-color: #188a8d;
   color: #fff; }
+
+.learn-more {
+  border-bottom: #188a8d 1px solid;
+  color: #188a8d;
+  font-weight: 400;
+  margin: 5px;
+  background: #fff;
+  transition: all .5s; }
+  .learn-more:hover {
+    background-color: #188a8d;
+    color: #fff;
+    border: none;
+    transform: translateX(5px) scale(1.1); }
+
+.responsive-img {
+  position: absolute;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+  outline-offset: 15px; }
+  .responsive-img:hover {
+    transform: scale(1.1);
+    z-index: 10;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+    outline: 15px solid #188a8d; }
+    .responsive-img:hover:not(:hover) {
+      transform: scale(0.9); }
+
+.composition {
+  position: relative; }
+  .composition-about-photo__p1 {
+    top: 250px;
+    width: 50% !important;
+    left: 100px; }
+  .composition-about-photo__p2 {
+    width: 50%;
+    top: 40px;
+    left: 20px; }
+  .composition-about-photo__p3 {
+    width: 50%;
+    top: 100px;
+    right: 50px; }
 
 .header {
   position: relative;
@@ -6628,3 +6669,6 @@ __main-heading {
   background-color: #f7f7f7;
   padding: 15rem 0;
   margin-top: -20vh; }
+
+.my-container {
+  padding: 0 10rem; }
