@@ -1,0 +1,16 @@
+.header-btn {
+  &:link,
+  &:visited {
+    background-color: #fff;
+    color: rgb(24, 138, 141);
+    border-radius: 200px;
+    font-weight: bold;
+    transition: all 1s;
+    animation: moveInRight 1s;
+  }
+  &:hover {
+    transform: scale(1.1);
+    background-color: rgb(24, 138, 141);
+    color: #fff;
+  }
+}
